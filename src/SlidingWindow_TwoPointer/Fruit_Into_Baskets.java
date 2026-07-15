@@ -23,6 +23,12 @@ public class Fruit_Into_Baskets {
             // Add the current fruit into the HashMap
             // If the fruit already exists, increase its count by 1
             // Otherwise, insert it with count = 1
+
+
+
+            //map.getOrDefault(key, defaultValue) works like this:
+            // If the key exists, return its current value.
+            // If the key does not exist, return the default value.
             map.put(fruits[right], map.getOrDefault(fruits[right], 0) + 1);
 
             // If the window contains more than 2 fruit types,
