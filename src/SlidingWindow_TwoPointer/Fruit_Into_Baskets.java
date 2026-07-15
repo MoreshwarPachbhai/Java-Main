@@ -36,6 +36,7 @@ public class Fruit_Into_Baskets {
             while (map.size() > 2) {
 
                 // Reduce the count of the leftmost fruit
+                // map.get(fruits[left]) returns the current count (frequency) of that fruit type in the HashMap.
                 map.put(fruits[left], map.get(fruits[left]) - 1);
 
                 // If its count becomes 0,
